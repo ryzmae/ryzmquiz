@@ -1,0 +1,34 @@
+{
+  "name": "ryzmquiz",
+  "version": "1.0.0",
+  "description": "A javascript quiz built-in the commandline",
+  "main": "src/index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzmae/ryzmquiz.git"
+  },
+  "keywords": [
+    "cli",
+    "quiz",
+    "javascript"
+  ],
+  "author": "ryzmae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryzmae/ryzmquiz/issues"
+  },
+  "homepage": "https://github.com/ryzmae/ryzmquiz#readme",
+  "bin": "./src/index.mjs",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.6.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.7",
+    "nanospinner": "^1.1.0"
+  }
+}
