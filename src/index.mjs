@@ -136,6 +136,70 @@ async function question_6() {
     return handleAnswer(answers.question_6 === 'May 29th, 2013');
 }
 
+async function question_7() {
+    const answers = await inquirer.prompt({
+        name: "question_7",
+        type: "list",
+        message: "When was Java released?",
+        choices: [
+            "Dec 12th, 1995",
+            "May 23th, 1995",
+            "July 21st, 1995",
+            "Apr 7th, 1997"
+        ],
+    });
+
+    return handleAnswer(answers.question_7 === 'May 23th, 1995');
+}
+
+async function question_8() {
+    const answers = await inquirer.prompt({
+        name: "question_8",
+        type: "list",
+        message: "When was Swift released?",
+        choices: [
+            "June 2nd, 2014",
+            "May 23th, 2014",
+            "July 21st, 2016",
+            "Apr 7th, 2015"
+        ],
+    });
+
+    return handleAnswer(answers.question_8 === 'June 2nd, 2014');
+}
+
+async function question_9() {
+    const answers = await inquirer.prompt({
+        name: "question_9",
+        type: "list",
+        message: "When was PHP released?",
+        choices: [
+            "July 8th, 1995",
+            "May 23th, 1995",
+            "July 21st, 1995",
+            "June 8th, 1995"
+        ],
+    });
+
+    return handleAnswer(answers.question_9 === 'June 8th, 1995');
+}
+
+async function question_10() {
+    const answers = await inquirer.prompt({
+        name: "question_10",
+        type: "list",
+        message: "When was Visual Studio Code released?",
+        choices: [
+            "July 8th, 2015",
+            "May 23th, 2015",
+            "July 21st, 2017",
+            "Apr 29th, 2015"
+        ],
+    });
+
+    return handleAnswer(answers.question_10 === 'Apr 29th, 2015');
+}
+
 async function handleAnswer(isCorrect) {
     const spinner = createSpinner("Checking answer...").start();
     await sleep()
@@ -167,4 +231,8 @@ await question_3();
 await question_4();
 await question_5();
 await question_6();
+await question_7();
+await question_8();
+await question_9();
+await question_10();
 winner();
