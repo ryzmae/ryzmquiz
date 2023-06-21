@@ -10,5 +10,5 @@ npx ryzmquiz@latest
 
 ## Links
 
-- [License]()
+- [License](https://github.com/ryzmae/ryzmquiz/blob/master/LICENSE)
 - [ryzm.tech](https://ryzm.tech)
